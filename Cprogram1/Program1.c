@@ -9,7 +9,7 @@ int main() {
 	FILE *fp;
 	char *line = NULL;
 	size_t len = 0;
-	ssize_t read;
+	size_t read;
 	
 	fp = fopen("./input.txt", "r");
 	if (fp == NULL)
@@ -37,7 +37,7 @@ int main() {
         }
         sum += sales[i];
     }
-
+    printf("\n");
     printf("Minimum sales:\t$%0.2f  (%s)\n", sales[min_index], months[min_index]);
     printf("Maximum sales:\t$%0.2f  (%s)\n", sales[max_index], months[max_index]);
     printf("Average sales:\t$%0.2f\n", sum / 12);
